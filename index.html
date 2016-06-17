@@ -1,48 +1,24 @@
 <!DOCTYPE html>
 <html height="100%" width="100%">
+
 <head>
-<style>
-.container {
-    position: relative;
-}
-
-.rightArrow {
-    position: absolute;
-    top: 45%;
-    right: 0;
-    height: 50px;
-    width: 100px;
-}
-
-.leftArrow {
-	-moz-transform: scale(-1, 1);
-	-webkit-transform: scale(-1, 1);
-	-o-transform: scale(-1, 1);
-	transform: scale(-1, 1);
-    	position: absolute;
-    	top: 45%;
-    	left: 0;
-   	height: 50px;
-    	width: 100px;
-}
-
-.bodyClass {
-    overflow: hidden;
-}
-
-</style>
+	<link rel="stylesheet" type="text/css" href="site.css" />
+	<script src="./plugins/jquery-3.0.0.min.js"></script>
+	<script src="comic.js" type="text/javascript"></script>
+	<script src="comicFinder.js" type="text/javascript"></script>
 </head>
-<body class="bodyClass">
 
-<div class="container">
-	<img class="rightArrow" src="comic.jpeg">
-	<a href="#">
-  		<img class="rightArrow" src="arrow_right.png">
-	</a>
-	<a href="#">
-  		<img class="leftArrow " src="arrow_right.png">
-	</a>
-</div>
+<body>
+
+	<div>
+		<a href="#" id="rightArrow">
+			<img class="rightArrow" src="arrow_right.png">
+		</a>
+		<a href="#" id="leftArrow">
+			<img class="leftArrow" src="arrow_right.png">
+		</a>
+	</div>
 
 </body>
+
 </html>
