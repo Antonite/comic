@@ -19,6 +19,18 @@ function createImage(name){
     img.src = "." + comics[name][0];
     a.href = "#" + name;
 
+    a.onclick = function () {
+        // var comicViewer = document.getElementById("comicViewer");
+        // comicViewer.style.visibility = "visible";
+
+        // $('.mainPage').addClass('hide');
+        $('#mainPageCollapser').click();
+        $('#comicCollapser').click();
+
+        console.log(name);
+        // return false;
+    }
+
     a.appendChild(img);
     li.appendChild(a);
 

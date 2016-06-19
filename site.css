@@ -1,35 +1,92 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, input, button, textarea, p, th, td, a
+{
+  margin: 0px;
+  padding: 0px;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+}
+
 html {
     height: 100%;
     width: 100%;
+    margin:0;
+   padding:0;
+}
+
+head {
+    height: 0;
+    width: 0;
 }
 
 body {
+    /*background-color: red;*/
     position: relative;
     overflow: hidden;
     background-size: 100% 100%;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    margin:0;
+    padding:0;
+}
+
+.rightArrowDiv {
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    right: 0;
+    margin:0;
+    padding:0;
+}
+
+.leftArrowDiv {
+    position: absolute;
+    height: 100%;
+    width: 20px;
+    left: 0;
+    margin:0;
+    padding:0;
+}
+
+.upArrowDiv {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    top: 0;
+    margin:0;
+    padding:0;
+}
+
+.rightArrowDiv:hover{
+    background-color: skyblue;
+}
+
+.leftArrowDiv:hover{
+    background-color: skyblue;
+}
+
+.upArrowDiv:hover{
+    background-color: skyblue;
 }
 
 .rightArrow {
     position: absolute;
     top: 45%;
     right: 0;
-    height: 50px;
-    width: 100px;
 }
 
 .leftArrow {
     position: absolute;
-	-moz-transform: scale(-1, 1);
-	-webkit-transform: scale(-1, 1);
-	-o-transform: scale(-1, 1);
-	transform: scale(-1, 1);
     top: 45%;
     left: 0;
-    height: 50px;
-    width: 100px;
+}
+
+.upArrow {
+    position: absolute;
+    left: 50%;
+    top: 0;
 }
 
 .comic {
