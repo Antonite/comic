@@ -20,15 +20,11 @@ function createImage(name){
     a.href = "#" + name;
 
     a.onclick = function () {
-        // var comicViewer = document.getElementById("comicViewer");
-        // comicViewer.style.visibility = "visible";
-
-        // $('.mainPage').addClass('hide');
         $('#mainPageCollapser').click();
         $('#comicCollapser').click();
-
-        console.log(name);
-        // return false;
+        currentComics = comics[name];
+        currentComicNum = 0;
+        $('body').css('background-image', 'url(' + currentComics[currentComicNum] + ')');
     }
 
     a.appendChild(img);

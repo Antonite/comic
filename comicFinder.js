@@ -2,6 +2,8 @@ var comics = [];
 var comicNames = [];
 var comicsLoaded = 0;
 var totalComics = 0;
+var currentComics = [];
+var currentComicNum = 0;
 
 function findComics() {
     $.ajax({
