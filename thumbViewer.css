@@ -1,0 +1,48 @@
+.thumbs{
+    position: absolute;
+    clear: both;
+    width: 98%;
+    height: 406px;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+	top: 30%;
+    left: 1%;
+
+}
+
+.thumbs ul{
+  padding:0;
+  margin:0;
+  list-style-type:none;
+  width: 5000px;
+}
+
+.thumbs li{
+  float:left;
+  margin:0;
+    padding:0;
+  width: 406px;
+  height: 406px;
+
+}
+
+.thumbs li a{
+  margin:0;
+  padding:0;
+  display:block;
+  width: 406px;
+  height: 406px;
+}
+
+.thumbs li a:hover, .thumbs li.active a{
+  background-color:black;
+}
+
+.thumbs img{
+  border: none;
+  padding: 3px;
+  margin: 0;
+  width: 400px;
+  height: 400px;
+}
